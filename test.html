@@ -2,9 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bootstrap Chat</title>
+    <link rel="stylesheet" href="bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-chat.css">
 </head>
+<style>
+    .bt-height{
+        height:256px;
+    }
+</style>
 <body>
-
+<h2><center>Bootstrap chat</center></h2>
+<div class="container" id="mian">
+    <div class="row">
+        <div class="col-xs-12 col-md-4 bt-height">
+            <div class="bootstrap-chat" id="chat1"></div>
+        </div>
+        <div class="col-xs-12 col-md-4 bt-height">
+            <div class="bootstrap-chat" id="chat2"></div>
+        </div>
+        <div class="col-xs-12 col-md-4 bt-height">
+            <div class="bootstrap-chat" id="chat3"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4 bt-height">
+            <div class="bootstrap-chat" id="chat4"></div>
+        </div>
+        <div class="col-xs-12 col-md-4 bt-height">
+            <div class="bootstrap-chat" id="chat5"></div>
+        </div>
+        <div class="col-xs-12 col-md-4 bt-height">
+            <div class="bootstrap-chat" id="chat6"></div>
+        </div>
+    </div>
+</div>
+<script src="./vendor/jquery.min.js"></script>
+<script src="./js/BootstrapChat.js?12"></script>
+<script type="text/javascript">
+    $('#chat1').bootstrapChat('init');
+    $('#chat2').bootstrapChat('init')
+    $('#chat3').bootstrapChat('init')
+    $('#chat4').bootstrapChat('init')
+    $('#chat5').bootstrapChat('init')
+    $('#chat6').bootstrapChat('init')
+</script>
 </body>
 </html>
